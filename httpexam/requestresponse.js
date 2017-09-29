@@ -5,7 +5,7 @@ var jade = require('jade');
 
 http.createServer(function ( request, response){
 	if (request.method == "GET"){
-		console.log(request.url +" GET");
+		console.log(request.url +" GET request");
 		if( request.url == '/'){
 			fs.readFile('index.html',function(err,data){
 				if (!err) {
